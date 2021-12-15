@@ -23,7 +23,7 @@ pipeline {
 		stage("Build"){
 			steps {
 				echo "Build"
-				sh 'mvn --version'
+				sudo sh 'mvn --version'
 			}
 		}
 		stage("Test"){
